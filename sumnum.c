@@ -9,16 +9,16 @@ int main()
     scanf("%d %d", &n1, &n2);
 	
 	if (n1 > n2){
-		printf("Numbers in ascending order: %d %d\n", n2, n1);
+		printf("Numbers in ascending order: %d %d\n\n", n2, n1);
 	}
 	else
-		printf("Numbers in ascending order: %d %d\n", n1, n2);
+		printf("Numbers in ascending order: %d %d\n\n", n1, n2);
 	
     // store sum in variable Sum
     Sum = n1 + n2;
 
     // display output     
-    printf("%d + %d = %d\n", n1, n2, Sum);
+    printf("%d + %d = %d\n\n", n1, n2, Sum);
     
     // check if the sum is even or odd, 
     // and print result to screen
