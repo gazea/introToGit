@@ -5,6 +5,7 @@ int main()
     int numberOfEntries, n, Sum = 0;
     
     printf("Enter the number of entries to sum (maximum of 10): ");
+	printf("\n");
 
     // integer entered by user stored using scanf()
     scanf("%d", &numberOfEntries);
