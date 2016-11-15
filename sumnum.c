@@ -25,5 +25,6 @@ int main()
     // display output     
     printf("Sum = %d\n", Sum);
 	printf("\n");
+	printf("\n");
     return 0;
 }
