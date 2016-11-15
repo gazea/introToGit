@@ -1,29 +1,28 @@
 #include <stdio.h>
+#define MAX_NUM 10
 int main()
 {
-    int n1, n2, Sum;
+    int numberOfEntries, n, Sum = 0;
     
-    printf("Enter two integers: ");
+    printf("Enter the number of entries to sum (maximum of 10): ");
 
-    // two integers entered by user are stored using scanf()
-    scanf("%d %d", &n1, &n2);
+    // integer entered by user stored using scanf()
+    scanf("%d", &numberOfEntries);
 	
-	if (n1 > n2){
-		printf("Numbers in ascending order: %d %d\n\n", n2, n1);
+	// while loop executed as long as a number greater than 0 was entered
+    while(numberOfEntries > 0){
+		if (numberOfEntries > MAX_NUM){ // if too many numbers are to be summed, program breaks out of while loop
+			printf("Error - too many numbers to sum\n");
+			break;
+		}
+		printf("Enter an integer: ");
+		scanf("%d", &n);				// reads in an integer and stores in n
+		Sum += n;						// adds n to Sum
+		numberOfEntries--;				// decrements numberOfEntries
 	}
-	else
-		printf("Numbers in ascending order: %d %d\n\n", n1, n2);
-	
-    // store sum in variable Sum
-    Sum = n1 + n2;
 
     // display output     
-    printf("%d + %d = %d\n\n", n1, n2, Sum);
-    
-    // check if the sum is even or odd, 
-    // and print result to screen
-    if(Sum % 2 == 0) printf("%d is even\n", Sum);
-    else printf("%d is odd\n", Sum);
-
+    printf("Sum = %d\n", Sum);
+   
     return 0;
 }
