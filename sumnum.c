@@ -7,7 +7,13 @@ int main()
 
     // two integers entered by user are stored using scanf()
     scanf("%d %d", &n1, &n2);
-
+	
+	if (n1 > n2){
+		printf("Numbers in ascending order: %d %d\n", n2, n1);
+	}
+	else
+		printf("Numbers in ascending order: %d %d\n", n1, n2);
+	
     // store sum in variable Sum
     Sum = n1 + n2;
 
